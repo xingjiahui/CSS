@@ -4,8 +4,8 @@
         var donationInfo = JSON.parse(data);
         console.log(donationInfo);
         // dom选择器选择要添加donate信息的标签
-        var donate_tbody = document.getElementById("donate_tbody");
-
+        //var donate_tbody = document.getElementById("donate_tbody");
+        var donate_tbody = document.getElementsByTagName("tbody");
         //遍历json数据，按格式加入到页面中
         //格式模板
         var temp = '<tr><td align="center"><a href="{url}" target="_blank" rel="noopener">{name}</a></td><td align="center">{pay_way}</td><td align="center">{userdonate}</td><td align="center">{donate_out}</td></tr>';
