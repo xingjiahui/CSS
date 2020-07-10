@@ -6,7 +6,7 @@
  * Released under the GPL-2.0 License.
  * Last Update: 2020/6/1 下午14:44:24:
  */
-$.get("https://donate.xingjiahui.top/getJsonData.php",function getData(data){var donationInfo=JSON.parse(data);
+$.get("https://donate.plushine.cn/getJsonData.php",function getData(data){var donationInfo=JSON.parse(data);
 var donate_tbody=$("table")[0];var temp='<tr><td align="center"><a href="{url}" target="_blank" rel="noopener">{name}</a></td><td align="center">{pay_way}</td><td align="center">{userdonate}</td><td align="center">{donate_out}</td></tr>';
 var STR="<tbody>";for(var i=0;i<donationInfo.length;
 i++){var str=temp.replace("{url}",donationInfo[i].user_url).replace("{name}",donationInfo[i].user_name).replace("{pay_way}",donationInfo[i].pay_way).replace("{userdonate}",donationInfo[i].user_donate);
