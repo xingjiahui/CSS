@@ -339,3 +339,8 @@ div.snote.blue {
 div.snote.blue::before {
   color: #2196f3;
 }
+
+//代码块背景色修改
+#article-container pre, #article-container figure.highlight {
+  background: rgba(43,161,209,0.6)  
+}
